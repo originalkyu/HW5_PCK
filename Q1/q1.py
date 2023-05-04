@@ -30,9 +30,9 @@ def main():
     print()
     print("Average Temperature: {:.2f} Celsius".format(sumMean/i))
     print()
-    print("Average Temperature: {:.2f} Celsius".format(sumMn/i))
+    print("Average Minimum Temperature: {:.2f} Celsius".format(sumMn/i))
     print()
-    print("Average Temperature: {:.2f} Celsius".format(sumMx/i))
+    print("Average Maximum Temperature: {:.2f} Celsius".format(sumMx/i))
 
     f.close()
 

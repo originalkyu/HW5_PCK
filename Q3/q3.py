@@ -9,11 +9,13 @@ def main():
 
 # row[1] 호선
 # row[4] 승차객수 
+    lines = ['1호선', '2호선', '3호선', '4호선', '5호선', '6호선', '7호선', '8호선', '9호선']
     for row in data:
-        if row[1] in dic:
-            dic[row[1]] = dic[row[1]] + int(row[4])+int(row[5])
-        else:
-            dic[row[1]] = int(row[4]) + int(row[5])
+        if row[1] in lines:
+            if row[1] in dic:
+                dic[row[1]] = dic[row[1]] + int(row[4])+int(row[5])
+            else:
+                dic[row[1]] = int(row[4]) + int(row[5])
 
     newList = sorted(dic.items(), key = lambda x: x[1])
 
