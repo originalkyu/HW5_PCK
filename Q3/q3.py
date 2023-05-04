@@ -11,9 +11,9 @@ def main():
 # row[4] 승차객수 
     for row in data:
         if row[1] in dic:
-            dic[row[1]] = dic[row[1]] + int(row[4])
+            dic[row[1]] = dic[row[1]] + int(row[4])+int(row[5])
         else:
-            dic[row[1]] = int(row[4])
+            dic[row[1]] = int(row[4]) + int(row[5])
 
     newList = sorted(dic.items(), key = lambda x: x[1])
 

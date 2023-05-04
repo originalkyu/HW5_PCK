@@ -25,34 +25,35 @@ def main():
 # row[1] 호선
 # row[4] 승차객수 
     for row in data:
+        num = int(row[4]) + int(row[5])
         if row[1]=="1호선":
-            if int(row[4]) > Mx1:
+            if num > Mx1:
                 Mx1L = row[3]
-                Mx1 = int(row[4])
-            if int(row[4]) < Mn1:
+                Mx1 = num
+            if num < Mn1:
                 Mn1L = row[3]
-                Mn1 = int(row[4])
+                Mn1 = num
         if row[1]=="2호선":
-            if int(row[4]) > Mx2:
+            if num > Mx2:
                 Mx2L = row[3]
-                Mx2 = int(row[4])
-            if int(row[4]) < Mn2:
+                Mx2 = num
+            if num < Mn2:
                 Mn2L = row[3]
-                Mn2 = int(row[4])
+                Mn2 = num
         if row[1]=="3호선":
-            if int(row[4]) > Mx3:
+            if num > Mx3:
                 Mx3L = row[3]
-                Mx3 = int(row[4])
-            if int(row[4]) < Mn3:
+                Mx3 = num
+            if num < Mn3:
                 Mn3L = row[3]
-                Mn3 = int(row[4])
+                Mn3 = num
         if row[1]=="4호선":
-            if int(row[4]) > Mx4:
+            if num > Mx4:
                 Mx4L = row[3]
-                Mx4 = int(row[4])
-            if int(row[4]) < Mn4:
+                Mx4 = num
+            if num < Mn4:
                 Mn4L = row[3]
-                Mn4 = int(row[4])
+                Mn4 = num
             
 
     print("*** Subway Report for Seoul on March 2023 ***")

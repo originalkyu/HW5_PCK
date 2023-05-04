@@ -28,11 +28,11 @@ def main():
 
     print("*** Annual Temperature Report for Seoul in 2022 ***")
     print()
-    print("Average Temperature: {:.2f}".format(sumMean/i))
+    print("Average Temperature: {:.2f} Celsius".format(sumMean/i))
     print()
-    print("Average Temperature: {:.2f}".format(sumMn/i))
+    print("Average Temperature: {:.2f} Celsius".format(sumMn/i))
     print()
-    print("Average Temperature: {:.2f}".format(sumMx/i))
+    print("Average Temperature: {:.2f} Celsius".format(sumMx/i))
 
     f.close()
 
